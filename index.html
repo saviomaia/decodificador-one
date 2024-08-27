@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <video class="video-background" autoplay loop muted playsinline>
+            <source src="./video/matrix.mp4" type="video/mp4">           
+        </video>
+    </div>
+    <div class="container">
+        <div class="painel-esquerdo">
+            <div class="logo">
+                <h1>DECODIFICADOR ONE</h1>
+            </div>
+            <div class="input-section">
+                <textarea id="input-text" placeholder="Digite seu texto aqui..." spellcheck="false"></textarea>
+            </div>
+            <div class="buttons">
+                <button class="btn encrypt" onclick="criptografarMsg()">Criptografar</button>
+                <button class="btn decrypt" onclick="descriptografarMsg()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="painel-direito">
+            <div class="message-status">
+                <h2 id="output-message">Nenhuma mensagem encontrada</h2>
+                <p id="sub">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>      
+            <div class="buttons">
+                <button class="btn copy" onclick="copiar()">Copiar</button>
+            </div>                        
+        </div>
+        
+        
+    </div>
+    <footer class="rodape">Desenvolvido por Sávio Maia.</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

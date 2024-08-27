@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@font-face {
+    font-family: 'matrix';
+    src: url('fonts/matrix.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  /*  background-color: black;*/
+}
+
+.painel-esquerdo {
+   
+    width: 60%;
+    padding: 20px;
+}
+
+.logo {
+    color: rgb(96, 234, 75);
+    font-family: 'matrix', sans-serif;
+    font-size: 40px;
+}
+
+.painel-direito {
+    
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section {
+    margin-top: 50px;
+    
+}
+
+.input-section label {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.input-section textarea {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 580px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    font-size: 30px;
+    font-family: 'matrix', sans-serif;
+    color: rgb(96, 234, 75);
+  
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    
+    padding: 15px 30px;
+    border: 2px solid #0dee11; 
+    border-radius: 15px;   
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.buttons .encrypt {
+    background-color: transparent; 
+    color: rgb(96, 234, 75);
+    font-family: 'matrix', sans-serif;
+}
+
+.buttons .decrypt {
+    background-color: transparent; 
+    color: rgb(96, 234, 75);
+    font-family: 'matrix', sans-serif;
+}
+
+.buttons .copy {
+    display: none;
+    background-color: transparent; 
+    color: rgb(96, 234, 75);
+    font-family: 'matrix', sans-serif;
+
+    
+}
+.message-status {
+   
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    width: 100%; 
+
+}
+
+
+
+.message-status h2 {
+   
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(96, 234, 75);
+    font-family: "Special Elite", system-ui;
+    word-break: break-word; 
+    white-space: normal;     
+    width: 100%;
+    
+}
+
+.message-status p {
+    font-size: 18px;
+    color: #fbfbfb;
+    font-family: "Special Elite", system-ui;
+}
+
+.rodape {
+    color: black;
+    background-color: #0dee11;
+    text-align: center;
+    font-family: "Special Elite", system-ui;
+    padding: 16px;
+    font-size: 24px;
+}
